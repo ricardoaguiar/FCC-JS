@@ -32,3 +32,8 @@ let result = fccRegex.test(myString);
 let myString = "freeCodeCamp";
 let fccRegex = /freeCodeCamp/i; // using the ignore flag /i
 let result = fccRegex.test(myString);
+
+//Regular Expressions: Extract Matches
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /change/; // Change this line
+let result = extractStr; // Change this line
