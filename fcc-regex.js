@@ -60,3 +60,18 @@ let result = twinkleStar; // Change this line
   let result = twinkleStar.match(starRegex); // Change this line
   console.log(result); // return Twinkle, twinkle
 
+
+// Regular Expressions: Match Anything with Wildcard Period
+let humStr = "I'll hum a song";
+let hugStr = "Bear hug";
+let huRegex = /hu./;
+humStr.match(huRegex); // Returns ["hum"]
+hugStr.match(huRegex); // Returns ["hug"]
+
+//solution
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);
+
+
+
