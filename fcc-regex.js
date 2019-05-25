@@ -67,11 +67,15 @@ let hugStr = "Bear hug";
 let huRegex = /hu./;
 humStr.match(huRegex); // Returns ["hum"]
 hugStr.match(huRegex); // Returns ["hug"]
+  //solution
+  let exampleStr = "Let's have fun with regular expressions!";
+  let unRegex = /.un/; // Change this line
+  let result = unRegex.test(exampleStr);
 
-//solution
-let exampleStr = "Let's have fun with regular expressions!";
-let unRegex = /.un/; // Change this line
-let result = unRegex.test(exampleStr);
+//Regular Expressions: Find Characters with Lazy Matching
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*>/; // Change this line
+let result = text.match(myRegex);
 
 
 
