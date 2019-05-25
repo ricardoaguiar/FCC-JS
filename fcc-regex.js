@@ -89,3 +89,21 @@ let result = pwRegex.test(sampleWord);
   let result = pwRegex.test(sampleWord);
   console.log(result);
 
+//Regular Expressions: Reuse Patterns Using Capture Groups
+// The example below matches any word that occurs twice separated by a space:
+// let repeatStr = "regex regex";
+// let repeatRegex = /(\w+)\s\1/;
+// repeatRegex.test(repeatStr); // Returns true
+// repeatStr.match(repeatRegex); // Returns ["regex regex", "regex"]
+// Using the .match() method on a string will return an array with the string it matches, along with its capture group.
+
+let repeatNum = "42 42 42";
+    let reRegex = /change/; // Change this line
+    let result = reRegex.test(repeatNum);
+
+    //solution
+    let repeatNum = "42 42 42";
+    let reRegex = /^(\d+)\s\1\s\1$/; // Change this line
+    let result = reRegex.test(repeatNum);
+
+
