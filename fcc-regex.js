@@ -77,5 +77,15 @@ let text = "<h1>Winter is coming</h1>";
 let myRegex = /<.*>/; // Change this line
 let result = text.match(myRegex);
 
+//Regular Expressions: Positive and Negative Lookahead
+let sampleWord = "astronaut";
+let pwRegex = /change/; // Change this line
+let result = pwRegex.test(sampleWord);
 
+  //Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long and have two consecutive digits.
+  //solution
+  let sampleWord = "astronaut";
+  let pwRegex = /(?=\w{5,}?)(?=\D*\d{2})/; // Change this line
+  let result = pwRegex.test(sampleWord);
+  console.log(result);
 
