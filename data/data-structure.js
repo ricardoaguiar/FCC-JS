@@ -36,3 +36,35 @@ console.log(copyMachine([true, false, true], 2));
 
     // change code here to test different cases:
     console.log(copyMachine([true, false, true], 2)); //return true,false,true,true,false,true
+
+//Check For The Presence of an Element With indexOf()
+//example
+let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+
+fruits.indexOf('dates') // returns -1
+fruits.indexOf('oranges') // returns 2
+fruits.indexOf('pears') // returns 1, the first index at which the element exists
+
+//challenge
+function quickCheck(arr, elem) {
+  // change code below this line
+
+  // change code above this line
+}
+// change code here to test different cases:
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+//solution1 //if statment to check if the return value. If return value (elem) = -1 (false) - (elem not in the arr)
+function quickCheck(arr, elem) {
+  if(arr.indexOf(elem)>=0) {
+    return true;
+  }
+  return false;
+}
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+//solution2
+function quickCheck(arr, elem) {
+return arr.indexOf(elem) >= 0 ? true : false;
+}
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
