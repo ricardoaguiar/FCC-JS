@@ -65,6 +65,6 @@ console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
 //solution2
 function quickCheck(arr, elem) {
-return arr.indexOf(elem) >= 0 ? true : false;
+return arr.indexOf(elem) >= 0 ? true : false; //arrow function solution. note the arrow function is anonymous. 
 }
 console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
