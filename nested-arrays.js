@@ -7,3 +7,6 @@ let myNestedArray = [
   ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
   // change code above this line
 ];
+
+//my example
+var a = [ [a,1], [b, 2], [c, 3], [d, 4], [e, 5], [f, 6]];
