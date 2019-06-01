@@ -4,3 +4,10 @@ function convertToF(celsius) {
   console.log(fahrenheit);
 }
 convertToF(30);
+
+
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+reverseString("hello");
+
